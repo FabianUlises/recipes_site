@@ -1,0 +1,75 @@
+/* Custom variables */
+:root {
+    --max-width: 1200px;
+}
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    display: inline-block;
+    width: 100%;
+}
+body {
+    font-family: system-ui, sans-serif;
+}
+/* Site logo image */
+.logo__img {
+    inline-size: 200px;
+}
+/* Nav burger button */
+.burger-btn {
+    background: transparent;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    border: none;
+    cursor: pointer;
+}
+.burger-btn .bar {
+    background-color: darkblue;
+    inline-size: 25px;
+    block-size: 5px;
+    border-radius: 8px;
+}
+/* Start of site nav styles */
+.site-nav {
+    padding-block-start: .8rem;
+    padding-inline: .4rem;
+}
+@media screen and (min-width: 1200px) {
+    .site-nav {
+        padding-inline: 0;
+    }
+}
+.nav-header {
+    /* background: darkgray; */
+    max-inline-size: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block-end: 1rem;
+}
+.nav-links {
+}
+.nav-links .nav-link {
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-block-start: 1px solid black;
+}
+/* End of site nav styles */
