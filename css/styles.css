@@ -31,7 +31,7 @@ body {
     color: var(--text1);
     min-block-size: 100vh;
     font-family: system-ui, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 /* Site logo image */
 .logo__img {
@@ -156,3 +156,19 @@ body {
     }
 }
 /* End of site nav styles */
+/* Start of main content styles */
+.page {
+    min-block-size: calc(100vh - (4rem + 76.8px));
+    inline-size: 100%;
+    max-inline-size: var(--max-width);
+    margin-inline: auto;
+}
+/* End of main content styles */
+/* Start of footer styles */
+footer {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Start of footer styles */
