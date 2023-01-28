@@ -164,8 +164,30 @@ body {
     margin-inline: auto;
 }
 /* End of main content styles */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(./../assets/img/main.jpeg) center/cover no-repeat;
+    min-height: 18rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border-radius: 8px;
+}
+.banner__title {
+    font-weight: lighter;
+    font-size: 3.7rem;
+    margin-bottom: 1rem;
+}
+.banner__subtitle {
+    font-weight: 500;
+}
+@media screen and (min-width: 992px) {
+    .page {
+        min-block-size: calc(100vh - (4rem + 64px));
+    }
+}
 /* Start of footer styles */
 footer {
+    background: black;
     height: 4rem;
     display: flex;
     justify-content: center;
