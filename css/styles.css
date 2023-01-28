@@ -59,6 +59,15 @@ body {
 .contact-btn:active {
     transform: scale(1);
 }
+/* Hide and display links on mobile */
+.nav-links {
+    display: none;
+}
+.show-links {
+    display: block;
+}
+
+
 /* Start of site nav styles */
 .site-nav {
     padding-block-start: .8rem;
@@ -69,16 +78,20 @@ body {
         padding-inline: 0;
     }
 }
-.nav-header {
-    /* background: darkgray; */
+.nav-center {
+    inline-size: 100%;
     max-inline-size: var(--max-width);
-    margin-inline: auto;
+}
+.nav-header {
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block-end: 1rem;
 }
-.nav-links {
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-links .nav-link {
     display: block;
