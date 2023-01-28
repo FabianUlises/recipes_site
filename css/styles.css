@@ -1,5 +1,12 @@
 /* Custom variables */
 :root {
+    --logo: hsl(243, 100%, 68%);
+
+
+    --surface1: hsl(210 15% 5%);
+
+    --text1: hsl(210 5% 98%);
+
     --max-width: 1200px;
 }
 /* Global reset */
@@ -20,7 +27,11 @@ img {
     width: 100%;
 }
 body {
+    background: var(--surface1);
+    color: var(--text1);
+    min-block-size: 100vh;
     font-family: system-ui, sans-serif;
+    overflow: hidden;
 }
 /* Site logo image */
 .logo__img {
@@ -36,7 +47,7 @@ body {
     cursor: pointer;
 }
 .burger-btn .bar {
-    background-color: darkblue;
+    background: var(--text1);
     inline-size: 25px;
     block-size: 5px;
     border-radius: 8px;
@@ -45,19 +56,20 @@ body {
     padding: 2rem !important;
 }
 .contact-btn {
+    background: hsla(243, 100%, 68%, .2);
+    color: var(--text1);
     display: inline-block;
-    background: rebeccapurple;
-    color: whitesmoke;
     padding: .8rem .6rem;
     border-radius: 8px;
     box-shadow: 2px 2px 2px rgba(169, 169, 169, 0.133);
     transition: transform 250ms ease;
 }
 .contact-btn:hover {
-    transform: scale(1.04);
+    transform: translateY(2px);
+    box-shadow: none;
 }
 .contact-btn:active {
-    transform: scale(1);
+    transform: scale(1.2);
 }
 /* Hide and display links on mobile */
 .nav-links {
@@ -81,6 +93,7 @@ body {
 .nav-center {
     inline-size: 100%;
     max-inline-size: var(--max-width);
+    margin-inline: auto;
 }
 .nav-header {
     height: 4rem;
@@ -102,5 +115,44 @@ body {
     font-weight: 600;
     letter-spacing: 2px;
     border-block-start: 1px solid black;
+    transition: color 250ms ease;
+}
+.nav-links .nav-link:hover {
+    color: var(--logo);
+}
+@media screen and (min-width: 992px) {
+    .site-nav {
+        padding: 0;
+    }
+    .burger-btn {
+        display: none;
+    }
+    .nav-center {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo {
+        margin-inline-end: 2rem;
+    }
+    .nav-links {
+        inline-size: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    .nav-links .nav-link {
+        padding: 0;
+        border: none;
+        margin-inline-end: 1rem;
+    }
+    .contact-btn-container {
+        margin-inline-start: auto;
+        padding: 0 !important;
+    }
+    .contact-btn {
+        box-shadow: none;
+        padding: .6rem;
+    }
 }
 /* End of site nav styles */
