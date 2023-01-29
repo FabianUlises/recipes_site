@@ -33,6 +33,7 @@ body {
     min-block-size: 100vh;
     font-family: system-ui, sans-serif;
     overflow-x: hidden;
+    padding-block-start: 2rem;
 }
 /* Site logo image */
 .logo__img {
@@ -253,6 +254,63 @@ body {
 .tags-container__tag h1{
     font-size: 1.4rem;
 }
+.tags-page h1 {
+    margin-block-end: 1rem;
+}
+.about-page {
+    padding: 5rem .8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-block-end: 4rem
+}
+.about-hero__meta {
+    display: grid;
+    gap: 1rem;
+    line-height: 1.7;
+}
+.about-hero__meta a {
+    background: hsla(243, 100%, 68%, .2);
+    color: var(--text1);
+    inline-size: max-content;
+    font-size: 17px;;
+    letter-spacing: 2px;
+    padding: .6rem .6rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.about-hero__meta h1 {
+    font-size: 2.3rem;
+}
+
+.about-hero__meta button {
+    inline-size: max-content;
+}
+.about-hero__img {
+    block-size: 20rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.about-recipes h1 {
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-block-end: 2rem;
+}
+.divider-bar {
+    background: rebeccapurple;
+    inline-size: 45%;
+    max-inline-size: 250px;
+    height: 2px;
+    margin-inline: auto;
+    margin-block-end: 2rem;
+}
 @media screen and (min-width: 992px) {
     .page {
         padding-block-end: 4rem;
@@ -282,6 +340,10 @@ body {
     }
     .tag-page-container {
         padding-inline: 0;
+    }
+    .about-hero {
+        grid-template-columns: 1fr 500px;
+        align-items: center;
     }
 }
 /* End of main content styles */
