@@ -311,6 +311,55 @@ body {
     margin-inline: auto;
     margin-block-end: 2rem;
 }
+
+/* CONTACT PAGE */
+.contact-page {
+    /* background: orange; */
+    display: grid;
+    gap: 2rem 4rem;
+    padding-block-start: 5rem;
+}
+.contact-section {
+    /* background: darkcyan; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem 4rem;
+    padding-inline: .9rem;
+    align-items: center;
+}
+.contact-meta {
+    /* background: darkkhaki; */
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    max-width: max-content;
+}
+.contact-meta__title {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.contact-meta__subtitle {
+    line-height: 1.4;
+}
+.contact-form {
+    background: darkgoldenrod;
+    padding: 1rem;
+    border-radius: 8px
+}
+.contact-form form {
+    background: royalblue;
+}
+.contact-recipe {
+    /* background: darkgreen; */
+    padding-block: 4rem
+}
+.contact-recipe h1 {
+    text-align: center;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+
 @media screen and (min-width: 992px) {
     .page {
         padding-block-end: 4rem;
