@@ -26,6 +26,7 @@ ul {
 img {
     display: inline-block;
     inline-size: 100%;
+    block-size: 100%;
 }
 body {
     background: var(--surface1);
@@ -33,7 +34,6 @@ body {
     min-block-size: 100vh;
     font-family: system-ui, sans-serif;
     overflow-x: hidden;
-    padding-block-start: 2rem;
 }
 input, textarea {
     outline: none;
@@ -421,6 +421,20 @@ input:focus, textarea:focus {
         align-items: center;
     }
 }
+/* Single recipe */
+.recipe-page-hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.recipe-page-hero__img {
+    background: red;
+    height: 17rem;
+/*    overflow: hidden;*/
+}
+.recipe-page-hero__img img {
+    display: inline-block;
+    object-fit: cover;
+}
 /* End of main content styles */
 /* Start of footer styles */
 footer {
@@ -429,5 +443,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer-logo {
+    color: var(--logo);
 }
 /* Start of footer styles */

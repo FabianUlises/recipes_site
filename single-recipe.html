@@ -45,82 +45,109 @@
         <!-- End of nav center -->
     </nav>
     <!-- End of nav -->
-    <!-- Start of main content -->
-    <div class="page">
-        <!-- Start of page banner -->
-        <header class="banner">
-            <!-- Banner title -->
-            <h1 class="banner__title">Simple Recipes</h1>
-            <!-- Banner subtitle -->
-            <h3 class="banner__subtitle">No Fluff, Just Recipes</h3>
-        </header>
-        <!-- End of page banner -->
-        <!-- Start of page main -->
-        <main class="recipes-container page-content">
-            <!-- Start of tags section -->
-            <section class="tags-container">
-                <!-- Section title -->
-                <h4>recipes</h4>
-                <!-- Start of tag list -->
-                <div class="tags-list">
-                    <!-- Tag list -->
-                    <a href="tag-template.html">Beef (1)</a>
-                    <a href="tag-template.html">Breakfast (2)</a>
-                    <a href="tag-template.html">Carrot (3)</a>
-                    <a href="tag-template.html">Food (4)</a> 
+    <!--    Start of single recipe page-->
+    <main class="page single-recipe-page page-content">
+        <!-- Start of Hero banner -->
+        <section class="single-recipe-page__hero recipe-page-hero">
+           <!-- Start of Hero image -->
+            <div class="recipe-page-hero__img">
+                <!-- Hero image -->
+                <img src="./assets/img/recipes/recipe-4.jpeg" alt="pancakes">
+            </div>
+            <!-- End of Hero image -->
+            <!-- Start of Hero meta -->
+            <div class="recipe-page-hero__meta">
+                <!-- Hero meta title -->
+                <h1>Banana Pancakes</h1>
+                <!-- Hero meta subtitle -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat illo explicabo error voluptas commodi molestiae, quas iste aliquid delectus velit voluptatum rerum nemo officia, harum nesciunt architecto numquam adipisci ea voluptate nulla. Veritatis qui distinctio, beatae veniam. Provident, repellendus, asperiores.</p>
+                <!-- Start of Hero meta icons -->
+                <article class="hero-icons">
+                   <!-- Start single icons -->
+                    <div class="hero-icon">
+                        <!-- icon -->
+                        <i>🕕</i>
+                        <!-- icon title -->
+                        <p class="icon-title">Prep Time</p>
+                        <!-- icon text -->
+                        <p class="prep-time">30 mins</p>
+                    </div>
+                    <!-- End single icons -->
+                    <!-- Start single icons -->
+                    <div class="hero-icon">
+                       <!-- icon -->
+                        <i>⏱</i>
+                        <!-- icon title -->
+                        <p class="icon-title">Cook Time</p>
+                        <!-- icon text -->
+                        <p class="prep-time">5 mins</p>
+                    </div>
+                    <!-- End single icons -->
+                    <!-- Start single icons -->
+                    <div class="hero-icon">
+                       <!-- icon  -->
+                        <i>👥</i>
+                        <!-- icon title -->
+                        <p class="icon-title">Serving</p>
+                        <!-- icon text -->
+                        <p class="prep-time">6 Servings</p>
+                    </div>
+                    <!-- End single icons -->
+                </article>
+                <!-- End of Hero meta icons -->
+                <!-- Start of hero meta tags -->
+                <article class="hero-tags">
+                    <!-- Tags title -->
+                    <p>Tags</p>
+                    <!-- Tag -->
+                    <a href="tag-template.html" class="hero-tags__tag">Beef</a>
+                    <!-- Tag -->
+                    <a href="tag-template.html" class="hero-tags__tag">Breakfast</a>
+                    <!-- Tag -->
+                    <a href="tag-template.html" class="hero-tags__tag">Pancakes</a>
+                    <!-- Tag -->
+                    <a href="tag-template.html" class="hero-tags__tag">Food</a>
+                </article>
+                <!-- End of hero meta tags -->
+            </div>
+            <!-- End of Hero meta -->
+        </section>
+        <!-- End of Hero banner -->
+        <section class="single-recipe-page__meta">
+            <article>
+                <h1>Instructions</h1>
+                <div class="single-instruction">
+                    <div class="instruction-header">
+                        <h4>STEP 1</h4>
+                        <div class="intruction-bar"></div>
+                    </div>
+                    <div class="instruction-meta">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, debitis.</p>
+                    </div>
                 </div>
-                <!-- End of tag list -->
-            </section>
-            <!-- End of tags section -->
-            <!-- Start of recipes section  -->
-            <section class="recipes-list">
-                <!-- Start of single recipe -->
-                <a href="single-recipe.html" class="recipe-list__recipe">
-                    <!-- Recipe image -->
-                    <img src="./assets/img/recipes/recipe-1.jpeg" alt="food" class="img recipe=img">
-                    <!-- Recipe title -->
-                    <h5>Carne Asada</h5>
-                    <!-- Recipe ino -->
-                    <p>Prep : 15min | Cook : 20min</p>
-                </a>
-                <!-- End of single recipe -->
-                <!-- Start of single recipe -->
-                <a href="single-recipe.html" class="recipe-list__recipe">
-                    <!-- Recipe image -->
-                    <img src="./assets/img/recipes/recipe-2.jpeg" alt="food" class="img recipe=img">
-                    <!-- Recipe title -->
-                    <h5>Ribs</h5>
-                    <!-- Recipe ino -->
-                    <p>Prep : 15min | Cook : 20min</p>
-                </a>
-                <!-- End of single recipe -->
-                <!-- Start of single recipe -->
-                <a href="single-recipe.html" class="recipe-list__recipe">
-                    <!-- Recipe image -->
-                    <img src="./assets/img/recipes/recipe-3.jpeg" alt="food" class="img recipe=img">
-                    <!-- Recipe title -->
-                    <h5>Vegetable Soup</h5>
-                    <!-- Recipe ino -->
-                    <p>Prep : 15min | Cook : 20min</p>
-                </a>
-                <!-- End of single recipe -->
-                <!-- Start of single recipe -->
-                <a href="single-recipe.html" class="recipe-list__recipe">
-                    <!-- Recipe image -->
-                    <img src="./assets/img/recipes/recipe-4.jpeg" alt="food" class="img recipe=img">
-                    <!-- Recipe title -->
-                    <h5>Pancakes</h5>
-                    <!-- Recipe ino -->
-                    <p>Prep : 15min | Cook : 20min</p>
-                </a>
-                <!-- End of single recipe -->
-            </section>
-            <!-- End of recipes section  -->
-        </main>
-        <!-- End of page main -->
-    </div>
-    <!-- End of main content -->
-    <!-- Start of footer -->
+                <div class="single-instruction">
+                    <div class="instruction-header">
+                        <h4>STEP 2</h4>
+                        <div class="intruction-bar"></div>
+                    </div>
+                    <div class="instruction-meta">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus pariatur magni sapiente quaerat sunt in nostrum alias, cum sit. Dolorem.</p>
+                    </div>
+                </div>
+                <div class="single-instruction">
+                    <div class="instruction-header">
+                        <h4>STEP 3</h4>
+                        <div class="intruction-bar"></div>
+                    </div>
+                    <div class="instruction-meta">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+    <!--    Start of single recipe page-->
     <!-- End of footer -->
     <footer>
         <p>&copy; <span id="date"></span> <span class="footer-logo">SimplyRecipes</span></p>
