@@ -342,7 +342,7 @@ body {
     line-height: 1.4;
 }
 .contact-form {
-    background: darkgoldenrod;
+    background: var(--surface2);
     inline-size: 100%;
     max-inline-size: 575px;
     padding: 2rem;
@@ -378,9 +378,21 @@ body {
 .contact-recipe h1 {
     text-align: center;
     font-weight: 400;
-    padding: 1rem;
+    padding: 2rem;
 }
+.form-button-container button {
+    background: var(--surface1);
+    color: var(--text1);
+    border: none;
+    inline-size: 70px;
+    padding: .4rem 0;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-button-container button:hover {
 
+}
 
 @media screen and (min-width: 992px) {
     .page {
