@@ -6,6 +6,10 @@ const getElement = (selector) => {
 }
 // Menu button
 const menuBtn = getElement('.burger-btn');
+// Footer date
+const date = getElement('#date');
+const year = new Date().getFullYear();
+date.textContent = year;
 // Adding click event to menu button
 menuBtn.addEventListener('click', () => {
     const navLinks = getElement('.nav-links');
